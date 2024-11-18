@@ -1,9 +1,9 @@
-import Image from "next/image";
+import Header from './Sections/header'
 
 export default function Home() {
   return (
-    <div>
-      <h1>Hola mundo</h1>
-    </div>
+    <main className="w-screen h-screen bg-slate-200 font-sans">
+      <Header />
+    </main>
   );
 }
