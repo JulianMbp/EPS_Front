@@ -1,8 +1,11 @@
 'use client'
+
+import Header from "@/app/Sections/header"
+
 export default function Paciente() {
     return (
-        <div>
-            <h1>Página de Paciente</h1>
-        </div>
+        <main className="">
+            <Header/>
+        </main>
     )
 }

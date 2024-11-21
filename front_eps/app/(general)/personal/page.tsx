@@ -1,8 +1,11 @@
 'use client'
+
+import Header from "@/app/Sections/header"
+
 export default function Personal() {
     return (
-        <div>
-            <h1>Página de Personal</h1>
-        </div>
+        <main className="">
+            <Header/>
+        </main>
     )
 }
