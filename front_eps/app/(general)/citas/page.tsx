@@ -1,3 +1,4 @@
+'use client'
 import { fetchCitas } from '@/app/redux/slice/citasslice';
 import type { AppDispatch, RootState } from '@/app/redux/store';
 import { useEffect } from 'react';
