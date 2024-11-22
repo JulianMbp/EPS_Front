@@ -27,7 +27,7 @@ const initialState: CitasState = {
 const API_BASE_URL = 'http://localhost:3100/api/citas';
 
 // Thunks
-export const fetchCitas = createAsyncThunk('citas/fetchCitas', async () => {
+export const verCitas = createAsyncThunk('citas/fetchCitas', async () => {
   const response = await axios.get(`${API_BASE_URL}/ver`);
   return response.data.data;
 });
@@ -69,15 +69,15 @@ const citasSlice = createSlice({
   extraReducers: (builder) => {
     builder
       // Fetch Citas
-      .addCase(fetchCitas.pending, (state) => {
+      .addCase(verCitas.pending, (state) => {
         state.loading = true;
         state.error = null;
       })
-      .addCase(fetchCitas.fulfilled, (state, action) => {
+      .addCase(verCitas.fulfilled, (state, action) => {
         state.loading = false;
         state.citas = action.payload;
       })
-      .addCase(fetchCitas.rejected, (state, action) => {
+      .addCase(verCitas.rejected, (state, action) => {
         state.loading = false;
         state.error = action.error.message || 'Error al cargar las citas';
       })

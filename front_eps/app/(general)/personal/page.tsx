@@ -6,9 +6,10 @@ import {
   crearPersonal, 
   editarPersonal, 
   eliminarPersonal,
-  PersonalMedico 
-} from '../store/slices/personalMedicoSlice';
-import { AppDispatch, RootState } from '../store/store';
+  PersonalMedico, 
+} from '@/app/redux/slice/personalslice';
+
+import type { AppDispatch, RootState } from '@/app/redux/store';
 
 const PersonalMedicoComponent: React.FC = () => {
   const dispatch = useDispatch<AppDispatch>();
@@ -73,7 +74,7 @@ const PersonalMedicoComponent: React.FC = () => {
   }
 
   return (
-    <div className="container mx-auto p-6 bg-slate-200 ">
+    <div className="container mx-auto p-6">
       <div className="flex justify-between items-center mb-6">
         <h1 className="text-3xl font-bold text-gray-800">Gestión de Personal Médico</h1>
         <button
