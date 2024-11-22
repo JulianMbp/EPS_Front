@@ -1,7 +1,7 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 import axios from 'axios';
 
-interface Factura {
+export interface Factura {
   id: number;
   paciente: string;
   medico: string;
