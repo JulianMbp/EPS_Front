@@ -6,9 +6,9 @@ import {
   crearPaciente, 
   editarPaciente, 
   eliminarPaciente,
-  Paciente 
-} from '../store/slices/pacienteSlice';
-import { AppDispatch, RootState } from '../store/store';
+  Paciente
+} from '../../redux/slice/pacienteslice';
+import { AppDispatch, RootState } from '../../redux/store';
 
 const Pacientes: React.FC = () => {
   const dispatch = useDispatch<AppDispatch>();
