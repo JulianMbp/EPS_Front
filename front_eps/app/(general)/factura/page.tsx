@@ -1,3 +1,4 @@
+'use client'
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { 
@@ -116,7 +117,7 @@ const FacturasComponent: React.FC = () => {
                   {new Date(factura.fecha_factura).toLocaleDateString()}
                 </td>
                 <td className="px-6 py-4 whitespace-nowrap">
-                  ${factura.Total_factura.toFixed(2)}
+                  ${factura.Total_factura ? factura.Total_factura.toFixed(2) : '0.00'}
                 </td>
                 <td className="px-6 py-4 whitespace-nowrap">{factura.forma_pago}</td>
                 <td className="px-6 py-4 whitespace-nowrap">
