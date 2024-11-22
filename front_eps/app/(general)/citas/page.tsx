@@ -12,7 +12,7 @@ import { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 const CitasList = () => {
   const dispatch = useDispatch<AppDispatch>();
-  const { citas, loading, error } = useSelector((state: RootState) => state.citas);
+  const { citas } = useSelector((state: RootState) => state.citas);
 
   // Estados locales para las acciones
   const [nuevaCita, setNuevaCita] = useState({

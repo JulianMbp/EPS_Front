@@ -1,7 +1,7 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 import axios from 'axios';
 
-interface Medicamento {
+export interface Medicamento {
   id: number;
   nombre_medicamento: string;
   descripcion: string;

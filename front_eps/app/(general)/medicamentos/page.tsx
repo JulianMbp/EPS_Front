@@ -6,9 +6,9 @@ import {
   agregarMedicamento, 
   editarMedicamento, 
   eliminarMedicamento,
-  Medicamento 
-} from '../store/slices/farmaciaSlice';
-import { AppDispatch, RootState } from '../store/store';
+} from '@/app/redux/slice/farmaciaslice';
+import type { Medicamento } from '@/app/redux/slice/farmaciaslice';
+import { AppDispatch, RootState } from '@/app/redux/store';
 
 const Farmacia: React.FC = () => {
   const dispatch = useDispatch<AppDispatch>();

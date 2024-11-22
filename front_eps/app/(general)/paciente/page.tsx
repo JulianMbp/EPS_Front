@@ -54,8 +54,12 @@ const Pacientes: React.FC = () => {
   const openEditModal = (paciente: Paciente) => {
     setPacienteEdit(paciente);
     setFormData({
-      ...paciente,
-      fecha_nac: new Date(paciente.fecha_nac).toISOString().split('T')[0]
+      nombre: paciente.nombre,
+      apellido: paciente.apellido,
+      fecha_nac: new Date(paciente.fecha_nac).toISOString().split('T')[0],
+      telefono: paciente.telefono || '',
+      direccion: paciente.direccion || '',
+      email: paciente.email || ''
     });
     setShowModal(true);
   };

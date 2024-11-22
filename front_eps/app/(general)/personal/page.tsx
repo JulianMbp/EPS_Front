@@ -6,8 +6,8 @@ import {
   crearPersonal, 
   editarPersonal, 
   eliminarPersonal,
-  PersonalMedico, 
 } from '@/app/redux/slice/personalslice';
+import type { PersonalMedico } from '@/app/redux/slice/personalslice';
 
 import type { AppDispatch, RootState } from '@/app/redux/store';
 
